@@ -8,3 +8,6 @@ hamburgerIcon.addEventListener("click", () => {
     main.classList.toggle("nav-open-main");
     hamburgerIcon.classList.toggle("nav-open-icon");
 });
+function myFunction(x) {
+    x.classList.toggle("change");
+};
