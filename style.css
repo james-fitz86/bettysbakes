@@ -113,3 +113,33 @@ main.nav-open-main {
 #hamburger-icon.nav-open-icon {
     transform: translateX(230px);
 }
+.bread-photo{
+    width: 350px;
+    height:auto;
+    border: 2px solid #333333;
+    margin: 8px;
+}
+#bread-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bread-recipe{
+    background-color: #FAA562;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #333333;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.bread-recipe h3{ 
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+.bread-recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
