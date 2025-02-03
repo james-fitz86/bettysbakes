@@ -15,6 +15,7 @@ header{
     display:flex;
     height:80px;
     width:100%;
+    z-index: 1;
 }
 #header-logo{
     font-size: 1rem;
@@ -114,10 +115,9 @@ main.nav-open-main {
     transform: translateX(230px);
 }
 .bread-photo{
-    width: 350px;
+    width: 100%;
     height:auto;
-    border: 2px solid #333333;
-    margin: 8px;
+    border-radius: 15px;
 }
 #bread-container{
     display:flex;
@@ -126,13 +126,15 @@ main.nav-open-main {
     justify-content: space-around;
 }
 .bread-recipe{
-    background-color: #FAA562;
-    margin-top: 20px;
+    max-width: 366px;
+    background-color: #ffffff;
+    margin: 20px 8px 8px;
     padding: 10px;
     text-align: center;
-    border: 2px solid #333333;
+    border: 1px solid #333333;
     border-radius: 15px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    
 }
 .bread-recipe h3{ 
     font-family: 'Poppins', sans-serif;
@@ -141,5 +143,24 @@ main.nav-open-main {
 .bread-recipe:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-    z-index: -1;
+}
+#recipeDetails {
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+}
+#go-back{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px auto 0;
+    border-radius: 5px;;
+}
+#go-back:hover{
+    background-color: #9dd595;
+    cursor: pointer;
 }
