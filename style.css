@@ -19,7 +19,7 @@ header{
 }
 #header-logo{
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
     flex: 3;
     margin-top: 20px;
 }
