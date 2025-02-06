@@ -48,16 +48,84 @@ document.addEventListener("DOMContentLoaded", function(){
     function generateInnerHTML(index){
 
         const recipes = [
-            {title: "Wheat Bread Recipe"},
-            {title: "Brown Bread Recipe"},
-            {title: "Rye Bread Recipe"},
+            {title: "Wheat Bread Recipe",
+                ingredients: [
+                    "360 grams whole wheat flour",
+                    "7 grams active dry yeast",
+                    "295 milliliters warm water",
+                    "30 milliliters honey or sugar",
+                    "5 grams salt",
+                    "30 milliliters olive oil or melted butter"
+                ],
+                instructions: [
+                    "In a bowl, dissolve yeast in warm water with honey. Let it sit for 5-10 minutes until foamy.",
+                    "Add salt, oil, and half of the flour. Mix until combined.",
+                    "Gradually add the remaining flour and knead for about 8-10 minutes until smooth.",
+                    "Place dough in a greased bowl, cover, and let it rise for about 1 hour or until doubled.",
+                    "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan.",
+                    "Cover and let it rise again for about 30-45 minutes.",
+                    "Preheat oven to 190°C and bake for 30-35 minutes until golden brown.",
+                    "Let the bread cool before slicing. Enjoy!"
+                ]
+            },
+            {title: "Brown Bread Recipe",
+                ingredients: [
+                    "400 grams whole wheat flour",
+                    "100 grams all-purpose flour",
+                    "7 grams active dry yeast",
+                    "350 milliliters warm water",
+                    "20 grams molasses or brown sugar",
+                    "6 grams salt",
+                    "30 milliliters vegetable oil or melted butter"
+                ],
+                instructions: [
+                    "Dissolve yeast in warm water with molasses. Let it sit for 5-10 minutes until foamy.",
+                    "Add salt, oil, and half of the flour. Mix until combined.",
+                    "Gradually add the remaining flour and knead for about 8-10 minutes until smooth.",
+                    "Place dough in a greased bowl, cover, and let it rise for about 1 hour or until doubled.",
+                    "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan.",
+                    "Cover and let it rise again for about 30-45 minutes.",
+                    "Preheat oven to 190°C and bake for 30-35 minutes until golden brown.",
+                    "Let the bread cool before slicing. Enjoy!"
+                ]
+            },
+            {title: "Rye Bread Recipe",
+                ingredients: [
+                    "250 grams rye flour",
+                    "250 grams bread flour",
+                    "7 grams active dry yeast",
+                    "325 milliliters warm water",
+                    "10 grams caraway seeds (optional)",
+                    "8 grams salt",
+                    "20 milliliters honey or sugar",
+                    "20 milliliters vegetable oil or melted butter"
+                ],
+                instructions: [
+                    "Dissolve yeast in warm water with honey. Let it sit for 5-10 minutes until foamy.",
+                    "Add salt, oil, caraway seeds, and half of the flour. Mix until combined.",
+                    "Gradually add the remaining flour and knead for about 8-10 minutes until smooth.",
+                    "Place dough in a greased bowl, cover, and let it rise for about 1 hour or until doubled.",
+                    "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan.",
+                    "Cover and let it rise again for about 30-45 minutes.",
+                    "Preheat oven to 190°C and bake for 30-35 minutes until golden brown.",
+                    "Let the bread cool before slicing. Enjoy!"
+                ]
+            },
         ];
 
         const recipe = recipes[index];
 
         return `
             <div>
-                <p>${recipe.title}</p>
+                <h2>${recipe.title}</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                ${recipe.ingredients}
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                ${recipe.instructions}
+                </ol>
             </div>
         `;
 
