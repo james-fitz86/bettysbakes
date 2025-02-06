@@ -120,11 +120,15 @@ document.addEventListener("DOMContentLoaded", function(){
                 <h2>${recipe.title}</h2>
                 <h3>Ingredients:</h3>
                 <ul>
-                ${recipe.ingredients}
+                ${recipe.ingredients.map(function(item){
+                    return `<li>${item}</li>`;
+                }).join('')}
                 </ul>
                 <h3>Instructions:</h3>
                 <ol>
-                ${recipe.instructions}
+                ${recipe.instructions.map(function(step){
+                    return `<li>${step}</li>`;
+                }).join('')}
                 </ol>
             </div>
         `;
