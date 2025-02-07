@@ -115,7 +115,7 @@ main.nav-open-main {
 #hamburger-icon.nav-open-icon {
     transform: translateX(230px);
 }
-.bread-photo{
+.bread-photo, .tray-photo{
     width: 100%;
     height:auto;
     border-radius: 10px;
@@ -127,7 +127,7 @@ main.nav-open-main {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.bread-recipe{
+.bread-recipe, .tray-recipe{
     max-width: 366px;
     background-color: #ffffff;
     margin: 20px 8px 8px;
@@ -137,13 +137,13 @@ main.nav-open-main {
     transition: transform 0.3s ease-in-out;
     
 }
-.bread-recipe h3{ 
+.bread-recipe, .tray-recipe h3{ 
     font-family: 'Poppins', sans-serif;
     color: #333333;
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
-.bread-recipe:hover {
+.bread-recipe:hover, .tray-recipe:hover{
     transform: scale(1.05);
 }
 .bread-photo:hover{
@@ -156,6 +156,11 @@ main.nav-open-main {
     width: auto;
     max-width: 600px;
     margin: auto;
+    font-size: 1rem;
+}
+#recipeDetails h2, h3{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 #go-back{
     font-size: 1.5rem;
@@ -166,4 +171,12 @@ main.nav-open-main {
 #go-back:hover{
     background-color: #9dd595;
     cursor: pointer;
+}
+#tray-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+main a{
+    text-decoration: none;
 }
