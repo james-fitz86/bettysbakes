@@ -72,20 +72,19 @@ document.addEventListener("DOMContentLoaded", function(){
                 ingredients: [
                     "400 grams whole wheat flour",
                     "100 grams all-purpose flour",
-                    "7 grams active dry yeast",
-                    "350 milliliters warm water",
-                    "20 grams molasses or brown sugar",
+                    "5 grams baking soda",
                     "6 grams salt",
-                    "30 milliliters vegetable oil or melted butter"
+                    "300 milliliters buttermilk",
+                    "20 grams molasses or honey"
                 ],
                 instructions: [
-                    "Dissolve yeast in warm water with molasses. Let it sit for 5-10 minutes until foamy.",
-                    "Add salt, oil, and half of the flour. Mix until combined.",
-                    "Gradually add the remaining flour and knead for about 8-10 minutes until smooth.",
-                    "Place dough in a greased bowl, cover, and let it rise for about 1 hour or until doubled.",
-                    "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan.",
-                    "Cover and let it rise again for about 30-45 minutes.",
-                    "Preheat oven to 190°C and bake for 30-35 minutes until golden brown.",
+                    "Preheat oven to 200°C and line a baking sheet with parchment paper.",
+                    "In a large bowl, whisk together whole wheat flour, all-purpose flour, baking soda, and salt.",
+                    "Make a well in the center and pour in the buttermilk and molasses.",
+                    "Stir until just combined, then gently knead into a soft dough. Do not overwork.",
+                    "Shape the dough into a round loaf and place it on the baking sheet.",
+                    "Cut a deep cross on top of the dough to help it bake evenly.",
+                    "Bake for 30-35 minutes until golden brown and sounds hollow when tapped on the bottom.",
                     "Let the bread cool before slicing. Enjoy!"
                 ]
             },
