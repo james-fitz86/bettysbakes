@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded",storeOriginalAmounts);
 
 
 function scaleRecipe(){
-    let originalArea = 264;
+    const originalLength = document.querySelector("#original-length");
+    const originalWidth = document.querySelector("#original-width");
+    let originalArea = originalLength.innerText * originalWidth.innerText;
     const width = document.querySelector("#width-input");
     let typedWidth = width.value;
     const length = document.querySelector("#length-input");
