@@ -162,13 +162,13 @@ main.nav-open-main {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
-#go-back{
+button{
     font-size: 1.5rem;
     padding: 5px;
     margin: 10px auto 0;
     border-radius: 5px;;
 }
-#go-back:hover{
+button:hover{
     background-color: #9dd595;
     cursor: pointer;
 }
@@ -179,4 +179,23 @@ main.nav-open-main {
 }
 main a{
     text-decoration: none;
+}
+.scalable-container{
+    background-image: url('./Images/Traybakes/banana_1.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    border-radius: 12px;
+    padding: 40px;
+    width: auto;
+    max-width: 1000px;
+    margin: auto;
+    gap: 40px;
+}
+.scalable-recipe{
+    background-color: #ffffffde;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 1.2rem;
 }
