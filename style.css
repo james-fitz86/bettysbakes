@@ -181,7 +181,6 @@ main a{
     text-decoration: none;
 }
 .scalable-container{
-    background-image: url('./Images/Traybakes/banana_1.jpeg');
     background-position: center;
     background-size: cover;
     display: grid;
@@ -198,4 +197,21 @@ main a{
     border-radius: 12px;
     padding: 20px;
     font-size: 1.2rem;
+}
+.scalable-recipe h4{
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+#banana{
+    background-image: url('./Images/Traybakes/banana_1.jpeg');
+}
+#brownie{
+    background-image: url('./Images/Traybakes/tray_4.jpeg');
+}
+#chocolate{
+    background-image: url('./Images/Traybakes/chocolate_1.jpeg');
+}
+#cheesecake{
+    background-image: url('./Images/Traybakes/cheesecake_1.jpeg');
 }
