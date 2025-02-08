@@ -35,11 +35,11 @@
         <main>
             <a href="index.html#tray-bakes"><button class="back-to-traybakes">&larr; Tray Bakes</button></a>
             <h2>Banana Bread</h2>
-            <p>The following recipe is for a rectangular tray or tin of size 22cm x12cm. To adjust the recipe to suit 
+            <p>The following recipe is for a rectangular tray or tin of size <span id="original-length">22</span>cm x<span id="original-width">12</span>cm. To adjust the recipe to suit 
                 the size of your tray or tin, please enter the dimensions in the boxes below and scale the recipe to meet
                 your needs!
             </p>
-            <div class="scalable-container">
+            <div id="banana" class="scalable-container">
                 <div class="scalable-recipe">
                     <h3>Ingredients</h3>
                     <ul>
@@ -58,8 +58,9 @@
                         <li><span class="amount">75</span> <span class="unit">g</span> chopped walnuts (optional)</li>
                         <li><span class="amount">75</span> <span class="unit">g</span> chocolate chips (optional)</li>
                     </ul>
-                    <input id="width-input" type="text" placeholder="Width in cm"></input>
-                    <input id="length-input" type="text" placeholder="Length in cm"></input>
+                    <h4>Enter your tray size below:</h4>
+                    <input id="width-input" type="number" placeholder="Width in cm"></input>
+                    <input id="length-input" type="number" placeholder="Length in cm"></input>
                     <button id="scale-button">Scale</button>
                 </div>
                 <div class="scalable-recipe">
