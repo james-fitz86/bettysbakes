@@ -215,3 +215,7 @@ main a{
 #cheesecake{
     background-image: url('./Images/Traybakes/cheesecake_1.jpeg');
 }
+.error-message, #no-area{
+    color: red;
+    display: none;
+}
