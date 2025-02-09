@@ -55,9 +55,12 @@
                         <li><span class="amount">40</span> <span class="unit">g</span> raspberry jam</li>
                     </ul>
                     <h4>Enter your tray size below:</h4>
-                    <input id="width-input" type="number" placeholder="Width in cm"></input>
-                    <input id="length-input" type="number" placeholder="Length in cm"></input>
+                    <input id="width-input" type="number" class="positive-number" placeholder="Width in cm"></input>
+                    <input id="length-input" type="number" class="positive-number" placeholder="Length in cm"></input>
                     <button id="scale-button">Scale</button>
+                    <p class="error-message">Number must be greater than zero.</p>
+                    <p class="error-message">Number must be greater than zero.</p>
+                    <p id="no-area">Values must be entered into both boxes</p>
                 </div>
                 <div class="scalable-recipe">
                     <h3>Instructions</h3>
