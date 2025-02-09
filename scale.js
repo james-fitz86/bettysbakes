@@ -11,6 +11,18 @@ hamburgerIcon.addEventListener("click", () => {
 function myFunction(x) {
     x.classList.toggle("change");
 };
+document.querySelectorAll(".positive-number").forEach((input, index) =>{
+    input.addEventListener("input", (event) =>{
+        const errorMessgae = document.querySelectorAll(".error-message")[index];
+        if (event.target.value <=0){
+            errorMessgae.style.display = "inline-block";
+            event.target.style.borderColor = "red";
+        } else{
+            errorMessgae.style.display = "none";
+            event.target.style.borderColor = "";
+        }
+    });
+});
 
 let button = document.querySelector("#scale-button");
 button.addEventListener('click', scaleRecipe);
@@ -40,8 +52,15 @@ function scaleRecipe(){
     let newArea = typedLength * typedWidth;
     let spans = document.querySelectorAll('span.amount');
     let originalValues = JSON.parse(localStorage.getItem("originalAmounts"));
-    spans.forEach((span, index)=>{
-    let originalAmount = originalValues[index];
-    span.innerText = Math.round((newArea / originalArea) * originalAmount);
-    });
+    
+    const noArea = document.querySelector("#no-area");
+    if(newArea <=0){
+        noArea.style.display = "block";
+    } else{
+        noArea.style.display = "none";
+        spans.forEach((span, index)=>{
+            let originalAmount = originalValues[index];
+            span.innerText = Math.round((newArea / originalArea) * originalAmount);
+            });
+    }
 };
