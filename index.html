@@ -6,6 +6,8 @@
     <title>Betty's Bakes</title>
     <link href="./style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -31,6 +33,7 @@
             <a href="#tray-bakes">Tray Bakes</a>
             <a href="#quick-recipes">Quick Recipes</a>
             <a href="#about">About</a>
+            <a href="#newsletter">Newsletter</a>
         </nav>
         <main>
             <section id="home">
@@ -210,9 +213,27 @@
                     ecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id e
                     st laborum.
                   </p>
-                  
-                  
-            </section>
+                  </section>
+                  <section id="newsletter">
+                    
+                    <h2>Newsletter</h2>
+                    <p>Join our baking community today and never miss a delicious recipe! Sign up for our 
+                        newsletter to get exclusive baking tips, mouthwatering recipes, and special offers 
+                        delivered straight to your inbox. Create your free account now and start your sweet adventure!
+                    </p>
+                    <form id="newsletter-form" novalidate>
+                        <input type="text" id="name" name="name" placeholder="Your Name(at least 3 characters)" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number(10 digits starting with zero)" required>
+                        <div id="password-container">
+                            <input type="password" id="password" name="password" placeholder="Enter your password()" required>
+                            <span id="eye" onmousedown="togglePassword(event)">&#128065</span>
+                        </div>
+                        <button type="submit" value="Submit">Create Account</button>
+                    </form>
+                    <div id="result"></div>
+                  </section>
+                  <script src="./form.js"></script>
         </main>
         <footer>
             Content property of Betty. Design by James.
