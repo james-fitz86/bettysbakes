@@ -2,13 +2,14 @@ const hamburgerIcon = document.querySelector("#hamburger-icon");
 const nav = document.querySelector("nav");
 const main = document.querySelector("main");
 const headerTitle = document.querySelector("#header-content");
-
+const headerImage = document.querySelector('#header-image');
 
 hamburgerIcon.addEventListener("click", () => {
     nav.classList.toggle("nav-open");
     main.classList.toggle("nav-open-main");
     hamburgerIcon.classList.toggle("nav-open-icon");
     headerTitle.classList.toggle("nav-open-icon");
+    headerImage.classList.toggle("nav-open-image");
 });
 function myFunction(x) {
     x.classList.toggle("change");
