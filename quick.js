@@ -12,7 +12,7 @@ const printButton = document.querySelector('#print');
 const printList = document.querySelector('#printing-list');
 
 let presentIndex = 0;
-
+ 
 function updateDisplay() {
     quickRecipes.forEach((recipe, index) => {
         if (index === presentIndex) {
@@ -26,7 +26,6 @@ function updateDisplay() {
 updateDisplay();
 
 previousArrow.addEventListener('click', function(){
-    console.log("previous clicked");
     if (presentIndex > 0) {
         presentIndex--;
         updateDisplay();
@@ -34,11 +33,10 @@ previousArrow.addEventListener('click', function(){
 });
 
 nextArrow.addEventListener('click', function(){
-    console.log("next clicked");
     if (presentIndex < quickRecipes.length - 1) {
         presentIndex++;
         updateDisplay();
-    };
+    }
 });
 
 quickRecipes.forEach(recipe => {
@@ -63,6 +61,10 @@ listButtton.addEventListener('click', function(){
     });
 });
 
+viewListButton.addEventListener('click', function(){
+    shoppingList.style.display = "block";
+});
+
 clearListButton.addEventListener('click', function(){
     shoppingListItems.innerText = "";
 });
@@ -72,9 +74,6 @@ closeListButton.addEventListener('click', function(){
     shoppingList.style.display = "none";
 });
 
-viewListButton.addEventListener('click', function(){
-    shoppingList.style.display = "block";
-});
 
 printButton.addEventListener('click', function(){
     const printWindow = window.open('', '', 'height=500,width=800');

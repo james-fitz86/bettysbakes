@@ -37,7 +37,6 @@ document.addEventListener('keydown', (event)=>{
 });
 
 leftArrow.addEventListener('click', function(){
-    console.log("left arrow clicked");
     if (currentIndex > 0) {
         currentIndex--;
         galleryImage.src = thumbnails[currentIndex].getAttribute('alt');
@@ -45,7 +44,6 @@ leftArrow.addEventListener('click', function(){
 });
 
 rightArrow.addEventListener('click', function(){
-    console.log("right arrow clicked");
     if (currentIndex < thumbnails.length - 1) {
         currentIndex++;
         galleryImage.src = thumbnails[currentIndex].getAttribute('alt');
