@@ -7,7 +7,7 @@
     <link href="./style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,7 +24,7 @@
                 </h1>
             </div>
             <div id="header-logo">
-                <img src="./Images/Logos/header-logo.png">
+                <img id="header-image" src="./Images/Logos/header-logo.png">
             </div>
         </header>
         <nav>
@@ -35,9 +35,38 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#newsletter">Newsletter</a>
         </nav>
+        <div id="skiplink"><a tabindex="1" href="#main-content">
+            Skip to main content</a>
+        </div>
         <main>
             <section id="home">
-                <h2>Welcome</h2>
+                <h2 id="main-content" tabindex="0">Welcome</h2>
+                <div id="welcome-container">
+                    <div id="baker">
+                        <img id="baker-photo" src="./Images/Welcome/betty.jpeg">
+                    </div>
+                    <div id="welcome-content">
+                        <p id="first-par">
+                            Welcome to Betty’s Bakes, a haven for bakers and pastry lovers alike. 
+                            With over a decade of experience, Betty has mastered the art of baking, from 
+                            rustic loaves to indulgent tray bakes and everything in between. Whether 
+                            you’re looking for the perfect bread recipe, a quick midweek treat, or 
+                            inspiration for your next baking adventure, you’ll find a carefully curated 
+                            collection of tried-and-tested recipes here. Each bake is crafted with a 
+                            passion for flavour, texture, and simplicity, ensuring that both beginners and 
+                            seasoned bakers can achieve delicious results every time.
+                        </p>
+                        <p>
+                            Beyond recipes, Betty’s Bakes also features a portfolio gallery showcasing some 
+                            of Betty’s finest creations, offering a glimpse into the skill and artistry that 
+                            comes with years of practice. For those eager to stay updated, there’s a newsletter 
+                            packed with exclusive baking tips, seasonal inspiration, and new recipe alerts. 
+                            Whether you’re here to refine your skills, discover new favourites, or simply admire 
+                            beautiful bakes, Betty’s Bakes is the perfect place to indulge your love for all things 
+                            baked.
+                        </p>
+                    </div>
+                </div>
             </section>
             <section id="breads">
                 <h2>Breads</h2>
@@ -66,7 +95,7 @@
                       
             </section>
             <section id="tray-bakes">
-                <h2>Tray Bakes</h2>
+                <h2 tabindex="0">Tray Bakes</h2>
                 <p>
                     Indulge in a variety of irresistible bakes, from rich brownies 
                     to creamy cheesecakes and classic banana bread. Whether you're 
@@ -98,13 +127,13 @@
                 </div>
             </section>
             <section id="quick-recipes">
-                <h2>Quick Recipes</h2> 
+                <h2 tabindex="0">Quick Recipes</h2> 
                 <p>Explore our collection of quick and easy baking recipes! 
                     Use the left and right arrows to scroll through the delicious 
                     options. Click on the ingredients to mark them, and when you're 
                     ready, hit the 'Add to Shopping List' button to collect everything 
                     you need. Perfect for hassle-free baking and shopping!</p>
-                <span class="previous">&larr;</span>
+                <span class="previous" tabindex="0">&larr;</span>
                 <div id="quick-container">
                     <div class="quick-recipes">
                         <h3>Lemon Drizzle Cake</h3>
@@ -243,12 +272,12 @@
                     <button id="close-shopping-list">Close List</button>
                     <button id="print">Print</button>
                 </div>
-                <span class="next">&rarr;</span>
+                <span class="next" tabindex="0">&rarr;</span>
                 
                 <script src="./quick.js"></script>
             </section>
             <section id="portfolio">
-                <h2>Portfolio</h2>
+                <h2 tabindex="0">Portfolio</h2>
                 <p>These gallery images showcase a portfolio 
                     celebrating 10 years of baking. Click on the images below to view them in a larger size. 
                     Scroll through to explore each creation in more detail, for a closer look at the craftsmanship!</p>
@@ -259,6 +288,13 @@
                     <img class="thumb" src="./Images/Thumbnails/thumb_04.jpeg" alt="./Images/Full_Images/full_04.jpeg">
                     <img class="thumb" src="./Images/Thumbnails/thumb_05.jpeg" alt="./Images/Full_Images/full_05.jpeg">
                     <img class="thumb" src="./Images/Thumbnails/thumb_06.jpeg" alt="./Images/Full_Images/full_06.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_07.jpeg" alt="./Images/Full_Images/full_07.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_08.jpeg" alt="./Images/Full_Images/full_08.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_09.jpeg" alt="./Images/Full_Images/full_09.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_10.jpeg" alt="./Images/Full_Images/full_10.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_11.jpeg" alt="./Images/Full_Images/full_11.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_12.jpeg" alt="./Images/Full_Images/full_12.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_13.jpeg" alt="./Images/Full_Images/full_13.jpeg">
                 </div>
                 <div class="gallery" id="gallery">
                     <span class="close">X</span>
@@ -270,7 +306,7 @@
             <script src="./gallery.js"></script>
             <section id="newsletter">
                     
-                    <h2>Newsletter</h2>
+                    <h2 tabindex="0">Newsletter</h2>
                     <p>Join our baking community today and never miss a delicious recipe! Sign up for our 
                         newsletter to get exclusive baking tips, mouthwatering recipes, and special offers 
                         delivered straight to your inbox. Create your free account now and start your sweet adventure!
@@ -289,8 +325,8 @@
             </section>
             <script src="./form.js"></script>
         </main>
-        <footer>
-            Content property of Betty. Design by James.
+        <footer tabindex="0">
+            <p>Content property of Betty. Design by James.</p>
         </footer>
     </div>
     <script src="./script.js"></script>
