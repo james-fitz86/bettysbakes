@@ -23,7 +23,7 @@ header{
 #header-logo{
     text-align: center;
     flex: 2;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #header-content{
     color: #333333;
@@ -105,7 +105,7 @@ nav a:hover {
     color: white;
 }
 section{
-    margin-bottom: 150px;
+    margin-bottom: 90px;
 }
 #skiplink a {
     padding: 6px;
@@ -349,6 +349,7 @@ input[type="password"]{
     top: 50px;
     right: 50px;
     color: #ffffff;
+    font-size: 3rem;
 }
 .left{
     cursor: pointer;
@@ -450,3 +451,130 @@ li.marked {
 #first-par{
     margin-top: 0;
 }
+#section-divider{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.divider-image{
+    max-height: 30px;
+    width: auto;
+}
+.slideshow-container {
+max-width: 75px;
+position: relative;
+margin: auto;
+}
+.active {
+background-color: #717171;
+}
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+@media screen and (min-width: 768px) {
+    header { grid-area: header; }
+    nav { grid-area: nav; }
+    main { grid-area: main;}
+    footer { grid-area: footer; }
+    #wrapper { display: grid;
+    grid-template: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer"
+    }
+    nav{
+        min-height: 50px;
+        height: auto;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        padding-top: 0;
+        padding-bottom: 0;
+        left: 0;
+        border-right: none;
+        border-bottom: 1px solid #333333;
+        background-color: #f0ad7d;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+       
+    }
+    nav a{
+        padding-bottom: 0;
+    }
+    main{
+        margin-top: 120px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 140px;
+    }
+    #hamburger-icon{
+        display: none;
+    }
+    nav a{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.5rem;
+    }
+    #eye{
+        right: 80px; 
+    }
+    #header-logo{
+        flex: 1;
+    }
+    #header-content{
+        flex: 10;
+    }
+    #header-content h1{
+        font-size: 3rem;
+    }
+    .previous{
+        left: 100px;
+    }
+    .next{
+        right: 100px;
+    }
+    .previous, .next {
+        font-size: 4rem;
+        cursor: pointer;
+        position: absolute;
+        top: 350px;
+    }
+    .quick-recipes{
+        max-width: 75%;
+    }
+    .left{
+        top: 50%;
+        left: 10%;
+        font-size: 4rem;
+    }
+    .right{
+        top: 50%;
+        right: 10%;
+        font-size: 4rem;
+    }
+    .close{
+        font-size: 4rem;
+    }
+    .gallery img {
+        max-width: 90%;
+    }
+}
+
+  
