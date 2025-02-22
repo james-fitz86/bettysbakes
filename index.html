@@ -13,7 +13,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="hamburger-icon" onclick="myFunction(this)">
+            <div id="hamburger-icon" onclick="myFunction(this)" aria-label="Toggle navigation menu">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -23,25 +23,25 @@
                     Betty's Bakes
                 </h1>
             </div>
-            <div id="header-logo">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="./Images/Slideshow/Picture_1.png" style="width:100%">
+            <div id="header-logo" aria-label="Slideshow of baking items">
+                <div class="slideshow-container" role="region" aria-live="polite">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 1">
+                        <img src="./Images/Slideshow/Picture_1.png" style="width:100%" alt="Baked item">
                     </div>
-                    <div class="mySlides fade">
-                        <img src="./Images/Slideshow/Picture_2.png" style="width:100%">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 2">
+                        <img src="./Images/Slideshow/Picture_2.png" style="width:100%" alt="Baked item">
                     </div>
-                    <div class="mySlides fade">
-                        <img src="./Images/Slideshow/Picture_3.png" style="width:100%">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 3">
+                        <img src="./Images/Slideshow/Picture_3.png" style="width:100%" alt="Baked item">
                     </div>
-                    <div class="mySlides fade">
-                        <img src="./Images/Slideshow/Picture_4.png" style="width:100%">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 4">
+                        <img src="./Images/Slideshow/Picture_4.png" style="width:100%" alt="Baked item">
                     </div>
-                    <div class="mySlides fade">
-                        <img src="./Images/Slideshow/Picture_5.png" style="width:100%">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 5">
+                        <img src="./Images/Slideshow/Picture_5.png" style="width:100%" alt="Baked item">
                     </div>
-                    <div class="mySlides fade">
-                        <img src="./Images/Slideshow/Picture_6.png" style="width:100%">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 6">
+                        <img src="./Images/Slideshow/Picture_6.png" style="width:100%" alt="Baked item">
                     </div>
                 </div>
                 
@@ -55,15 +55,15 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#newsletter">Newsletter</a>
         </nav>
-        <div id="skiplink"><a tabindex="1" href="#main-content">
+        <div id="skiplink"><a tabindex="1" href="#main-content" aria-label="Skip to main content"></a>>
             Skip to main content</a>
         </div>
         <main>
-            <section id="home">
+            <section id="home" aria-labelledby="main-content">
                 <h2 id="main-content" tabindex="0">Welcome</h2>
                 <div id="welcome-container">
                     <div id="baker">
-                        <img id="baker-photo" src="./Images/Welcome/betty.jpeg">
+                        <img id="baker-photo" src="./Images/Welcome/betty.jpeg" alt="Photo of Betty, the baker">
                     </div>
                     <div id="welcome-content">
                         <p id="first-par">
@@ -95,7 +95,7 @@
                     <img class="divider-image" src="./Images/Logos/header-logo.png" alt="Logo">
                 </div>
             </section>
-            <section id="breads">
+            <section id="breads" aria-labelledby="breads-heading">
                 <h2 tabindex="0">Breads</h2>
                     <p>
                         Explore the collection of delicious bread recipes, 
@@ -105,23 +105,23 @@
                         your next favourite treat!
                     </p>
                     <div id="bread-container">
-                    <div class="bread-recipe" tabindex="0">
+                    <div class="bread-recipe" tabindex="0" role="button" aria-label="View Wheat Bread recipe">
                         <h3>Wheat bread</h3>
-                        <img class="bread-photo" src="./Images/Breads/bread_1.jpeg">
+                        <img class="bread-photo" src="./Images/Breads/bread_1.jpeg" alt="Wheat bread">
                     </div>
-                    <div class="bread-recipe" tabindex="0">
+                    <div class="bread-recipe" tabindex="0" role="button" aria-label="View Brown Bread recipe">
                         <h3>Brown bread</h3>
-                        <img class="bread-photo" src="./Images/Breads/bread_2.jpeg">
+                        <img class="bread-photo" src="./Images/Breads/bread_2.jpeg" alt="Brown bread">
                     </div>
-                    <div class="bread-recipe" tabindex="0">
+                    <div class="bread-recipe" tabindex="0" role="button" aria-label="View Rye Bread recipe">
                         <h3>Rye bread</h3>
-                        <img class="bread-photo" src="./Images/Breads/bread_3.jpeg">
+                        <img class="bread-photo" src="./Images/Breads/bread_3.jpeg" alt="Rye bread">
                     </div>
                 </div>
                       
                       
             </section>
-            <section id="tray-bakes">
+            <section id="tray-bakes" aria-labelledby="tray-bakes-heading">
                 <h2 tabindex="0">Tray Bakes</h2>
                 <p>
                     Indulge in a variety of irresistible bakes, from rich brownies 
@@ -131,49 +131,50 @@
                     how to create these delicious favorites at home!
                 </p>
                 <div id="tray-container">
-                    <a href="./banana.html"><div class="tray-recipe">
+                    <a href="./banana.html" aria-label="View Banana Bread recipe"><div class="tray-recipe">
                         <h3>Banana Bread</h3>
-                        <img class="tray-photo" src="./Images/Traybakes/tray_1.jpeg">
+                        <img class="tray-photo" src="./Images/Traybakes/tray_1.jpeg" alt="Banana Bread">
                     </div>
                     </a>
-                    <a href="./chocolate.html"><div class="tray-recipe">
+                    <a href="./chocolate.html" aria-label="View Chocolate Deluxe recipe"><div class="tray-recipe">
                         <h3>Chocolate Deluxe</h3>
-                        <img class="tray-photo" src="./Images/Traybakes/tray_2.jpeg">
+                        <img class="tray-photo" src="./Images/Traybakes/tray_2.jpeg" alt="Chocolate Deluxe">
                     </div>
                     </a>
-                    <a href="./cheesecake.html"><div class="tray-recipe">
+                    <a href="./cheesecake.html" aria-label="View Baked Cheesecake recipe"><div class="tray-recipe">
                         <h3>Baked Cheesecake</h3>
-                       <img class="tray-photo" src="./Images/Traybakes/tray_3.jpeg"> 
+                       <img class="tray-photo" src="./Images/Traybakes/tray_3.jpeg" alt="Baked Cheesecake"> 
                     </div>
                     </a>
-                    <a href="./brownie.html"><div class="tray-recipe">
+                    <a href="./brownie.html" aria-label="View Brownie recipe"><div class="tray-recipe">
                         <h3>Brownie</h3>
-                       <img class="tray-photo" src="./Images/Traybakes/tray_4.jpeg"> 
+                       <img class="tray-photo" src="./Images/Traybakes/tray_4.jpeg" alt="Brownie"> 
                     </div>
                     </a>
                 </div>
             </section>
-            <section id="quick-recipes">
+            <section id="quick-recipes" aria-labelledby="quick-recipes-heading">
                 <h2 tabindex="0">Quick Recipes</h2> 
                 <p>Explore our collection of quick and easy baking recipes! 
                     Use the left and right arrows to scroll through the delicious 
                     options. Click on the ingredients to mark them, and when you're 
                     ready, hit the 'Add to Shopping List' button to collect everything 
                     you need. Perfect for hassle-free baking and shopping!</p>
-                <span class="previous" tabindex="0">&larr;</span>
+                <span class="previous" tabindex="0" role="button" aria-label="Scroll left">&larr;</span>
+                <span class="next" tabindex="0" role="button" aria-label="Scroll right">&rarr;</span>
                 <div id="quick-container">
                     <div class="quick-recipes">
                         <h3>Lemon Drizzle Cake</h3>
                             <h4>Ingredients</h4>
                             <ul>
-                                <li>225g plain flour</li>
-                                <li>225g sugar</li>
-                                <li>225g butter</li>
-                                <li>4 eggs</li>
-                                <li>10g baking powder</li>
-                                <li>Zest of 2 lemons</li>
-                                <li>50ml lemon juice</li>
-                                <li>50g icing sugar</li>
+                                <li tabindex="0">225g plain flour</li>
+                                <li tabindex="0">225g sugar</li>
+                                <li tabindex="0">225g butter</li>
+                                <li tabindex="0">4 eggs</li>
+                                <li tabindex="0">10g baking powder</li>
+                                <li tabindex="0">Zest of 2 lemons</li>
+                                <li tabindex="0">50ml lemon juice</li>
+                                <li tabindex="0">50g icing sugar</li>
                             </ul>
                             <ol>
                                 <li>Preheat oven to 180°C and line a loaf tin.</li>
@@ -188,13 +189,13 @@
                         <h3>Carrot Cake</h3>
                             <h4>Ingredients</h4>    
                             <ul>
-                                <li>250g plain flour</li>
-                                <li>200g sugar</li>
-                                <li>200ml vegetable oil</li>
-                                <li>3 eggs</li>
-                                <li>5g cinnamon</li>
-                                <li>5g baking soda</li>
-                                <li>200g grated carrots</li>
+                                <li tabindex="0">250g plain flour</li>
+                                <li tabindex="0">200g sugar</li>
+                                <li tabindex="0">200ml vegetable oil</li>
+                                <li tabindex="0">3 eggs</li>
+                                <li tabindex="0">5g cinnamon</li>
+                                <li tabindex="0">5g baking soda</li>
+                                <li tabindex="0">200g grated carrots</li>
                             </ul>
                             <h4>Instructions</h4>
                             <ol>
@@ -209,11 +210,11 @@
                         <h3>Apple Crumble</h3>
                             <h4>Ingredients</h4>
                             <ul>
-                                <li>4 apples, peeled and sliced</li>
-                                <li>200g plain flour</li>
-                                <li>100g butter</li>
-                                <li>100g sugar</li>
-                                <li>5g cinnamon</li>
+                                <li tabindex="0">4 apples, peeled and sliced</li>
+                                <li tabindex="0">200g plain flour</li>
+                                <li tabindex="0">100g butter</li>
+                                <li tabindex="0">100g sugar</li>
+                                <li tabindex="0">5g cinnamon</li>
                             </ul>
                             <h4>Instructions</h4>
                             <ol>
@@ -228,9 +229,9 @@
                         <h3>Shortbread Cookies</h3>
                             <h4>Ingredients</h4>
                             <ul>
-                                <li>300g plain flour</li>
-                                <li>200g butter</li>
-                                <li>100g sugar</li>
+                                <li tabindex="0">300g plain flour</li>
+                                <li tabindex="0">200g butter</li>
+                                <li tabindex="0">100g sugar</li>
                             </ul>
                             <h4>Instructions</h4>
                             <ol>
@@ -245,13 +246,13 @@
                         <h3>Vanilla Cupcakes</h3>
                             <h4>Ingredients</h4>
                             <ul>
-                                <li>200g plain flour</li>
-                                <li>200g sugar</li>
-                                <li>200g butter</li>
-                                <li>4 eggs</li>
-                                <li>10g baking powder</li>
-                                <li>5g vanilla extract</li>
-                                <li>50ml milk</li>
+                                <li tabindex="0">200g plain flour</li>
+                                <li tabindex="0">200g sugar</li>
+                                <li tabindex="0">200g butter</li>
+                                <li tabindex="0">4 eggs</li>
+                                <li tabindex="0">10g baking powder</li>
+                                <li tabindex="0">5g vanilla extract</li>
+                                <li tabindex="0">50ml milk</li>
                             </ul>
                             <h4>Instructions</h4>
                             <ol>
@@ -267,13 +268,13 @@
                         <h3>Vanilla Sponge Cake</h3>
                             <h4>Ingredients</h4>
                             <ul>
-                                <li>200g plain flour</li>
-                                <li>200g sugar</li>
-                                <li>200g butter</li>
-                                <li>4 eggs</li>
-                                <li>10g baking powder</li>
-                                <li>5g vanilla extract</li>
-                                <li>50ml milk</li>
+                                <li tabindex="0">200g plain flour</li>
+                                <li tabindex="0">200g sugar</li>
+                                <li tabindex="0">200g butter</li>
+                                <li tabindex="0">4 eggs</li>
+                                <li tabindex="0">10g baking powder</li>
+                                <li tabindex="0">5g vanilla extract</li>
+                                <li tabindex="0">50ml milk</li>
                             </ul>
                             <h4>Instructions</h4>
                             <ol>
@@ -286,10 +287,10 @@
                                 <li>Cool before serving.</li>
                             </ol>
                     </div>
-                    <button id="add-to-shopping-list">Add to Shopping List</button>
+                    <button id="add-to-shopping-list" aria-label="Add selected items to shopping list">Add to Shopping List</button>
                     <button id="view-shopping-list">View Shopping List</button>
                 </div>
-                <div id="shopping-list">
+                <div id="shopping-list" role="dialog" aria-labelledby="shopping-list-title">
                     <div id="printing-list"><h2>Your Shopping List</h2>
                     <ul id="shopping-items">
 
@@ -297,9 +298,8 @@
                     </div>
                     <button id="clear-shopping-list">Clear List</button>
                     <button id="close-shopping-list">Close List</button>
-                    <button id="print">Print</button>
+                    <button id="print" aria-label="Print shopping list">Print</button>
                 </div>
-                <span class="next" tabindex="0">&rarr;</span>
                 
                 <script src="./quick.js"></script>
             </section>
@@ -309,22 +309,22 @@
                     celebrating 10 years of baking. Click on the images below to view them in a larger size. 
                     Scroll through to explore each creation in more detail, for a closer look at the craftsmanship!</p>
                 <div class="thumbnails">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_01.jpeg" alt="./Images/Full_Images/full_01.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_02.jpeg" alt="./Images/Full_Images/full_02.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_03.jpeg" alt="./Images/Full_Images/full_03.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_04.jpeg" alt="./Images/Full_Images/full_04.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_05.jpeg" alt="./Images/Full_Images/full_05.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_06.jpeg" alt="./Images/Full_Images/full_06.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_07.jpeg" alt="./Images/Full_Images/full_07.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_08.jpeg" alt="./Images/Full_Images/full_08.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_09.jpeg" alt="./Images/Full_Images/full_09.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_10.jpeg" alt="./Images/Full_Images/full_10.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_11.jpeg" alt="./Images/Full_Images/full_11.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_12.jpeg" alt="./Images/Full_Images/full_12.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_13.jpeg" alt="./Images/Full_Images/full_13.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_14.jpeg" alt="./Images/Full_Images/full_14.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_15.jpeg" alt="./Images/Full_Images/full_15.jpeg">
-                    <img class="thumb" src="./Images/Thumbnails/thumb_16.jpeg" alt="./Images/Full_Images/full_16.jpeg">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_01.jpeg" alt="Swiss Rolls" data-full="./Images/Full_Images/full_01.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_02.jpeg" alt="Croissant" data-full="./Images/Full_Images/full_02.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_03.jpeg" alt="Swiss Roll" data-full="./Images/Full_Images/full_03.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_04.jpeg" alt="Cream Buns" data-full="./Images/Full_Images/full_04.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_05.jpeg" alt="Breads" data-full="./Images/Full_Images/full_05.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_06.jpeg" alt="Cheesecake" data-full="./Images/Full_Images/full_06.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_07.jpeg" alt="Sponge Cake" data-full="./Images/Full_Images/full_07.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_08.jpeg" alt="Ginger Biscuits" data-full="./Images/Full_Images/full_08.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_09.jpeg" alt="Sponge Cake" data-full="./Images/Full_Images/full_09.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_10.jpeg" alt="Layered Cake" data-full="./Images/Full_Images/full_10.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_11.jpeg" alt="Cupcakes" data-full="./Images/Full_Images/full_11.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_12.jpeg" alt="Cinnamon Baskets" data-full="./Images/Full_Images/full_12.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_13.jpeg" alt="Breads" data-full="./Images/Full_Images/full_13.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_14.jpeg" alt="Sourdough" data-full="./Images/Full_Images/full_14.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_15.jpeg" alt="Traybake" data-full="./Images/Full_Images/full_15.jpeg" tabindex="0">
+                    <img class="thumb" src="./Images/Thumbnails/thumb_16.jpeg" alt="Muffins" data-full="./Images/Full_Images/full_16.jpeg" tabindex="0">
                 </div>
                 <div class="gallery" id="gallery">
                     <span class="close">&#10006;</span>
@@ -334,7 +334,7 @@
                 </div>
             </section>
             <script src="./gallery.js"></script>
-            <section id="newsletter">
+            <section id="newsletter" aria-labelledby="newsletter-heading">
                     
                     <h2 tabindex="0">Newsletter</h2>
                     <p>Join our baking community today and never miss a delicious recipe! Sign up for our 
@@ -355,7 +355,7 @@
             </section>
             <script src="./form.js"></script>
         </main>
-        <footer tabindex="0">
+        <footer tabindex="0" aria-label="footer">
             <p>Content property of Betty. Design by James.</p>
         </footer>
     </div>
