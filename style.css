@@ -623,5 +623,10 @@ to {opacity: 1}
     main p{
         font-size: 1.5rem;
     }
+    #shopping-list{
+        top: 152px;
+        right: 150px;
+        z-index: 1000;
+    }
 }
   
