@@ -2,7 +2,7 @@ const hamburgerIcon = document.querySelector("#hamburger-icon");
 const nav = document.querySelector("nav");
 const main = document.querySelector("main");
 const headerTitle = document.querySelector("#header-content");
-const headerImage = document.querySelector('#header-image');
+const headerImage = document.querySelector('#header-logo');
 
 hamburgerIcon.addEventListener("click", () => {
     nav.classList.toggle("nav-open");
@@ -67,3 +67,18 @@ function scaleRecipe(){
             });
     }
 };
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000);
+}
