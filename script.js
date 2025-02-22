@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
     breadContainer.after(goBackButton);
 
     breadRecipes.forEach((recipe, index) => {
-        recipe.addEventListener("click", function(){
+        function showRecipe(){
             const newElement = document.createElement("div"); 
             newElement.id = "recipeDetails";
             newElement.style.display = "flex";
@@ -46,7 +46,14 @@ document.addEventListener("DOMContentLoaded", function(){
                 newElement.style.display = "none";
                 goBackButton.style.display = "none";
             });
-        });
+        };
+        recipe.addEventListener("click", showRecipe);
+
+        recipe.addEventListener("keydown", function(event){
+            if (event.key === "Enter"){
+                showRecipe();
+            }
+        })
     });
 
     function generateInnerHTML(index){
