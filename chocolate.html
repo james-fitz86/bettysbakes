@@ -12,7 +12,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="hamburger-icon" onclick="myFunction(this)">
+            <div id="hamburger-icon" onclick="myFunction(this)" aria-label="Toggle navigation menu">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -22,8 +22,28 @@
                     Betty's Bakes
                 </h1>
             </div>
-            <div id="header-logo">
-                <img id="header-image" src="./Images/Logos/header-logo.png">
+            <div id="header-logo" aria-label="Slideshow of baking items">
+                <div class="slideshow-container" role="region" aria-live="polite">
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 1">
+                        <img src="./Images/Slideshow/Picture_1.png" style="width:100%" alt="Baked item">
+                    </div>
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 2">
+                        <img src="./Images/Slideshow/Picture_2.png" style="width:100%" alt="Baked item">
+                    </div>
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 3">
+                        <img src="./Images/Slideshow/Picture_3.png" style="width:100%" alt="Baked item">
+                    </div>
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 4">
+                        <img src="./Images/Slideshow/Picture_4.png" style="width:100%" alt="Baked item">
+                    </div>
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 5">
+                        <img src="./Images/Slideshow/Picture_5.png" style="width:100%" alt="Baked item">
+                    </div>
+                    <div class="mySlides fade" role="img" aria-label="Baked item image 6">
+                        <img src="./Images/Slideshow/Picture_6.png" style="width:100%" alt="Baked item">
+                    </div>
+                </div>
+                
             </div>
         </header>
         <nav>
@@ -35,7 +55,7 @@
             <a href="index.html#newsletter">Newsletter</a>
         </nav>
         <main>
-            <a href="index.html#tray-bakes"><button class="back-to-traybakes">&larr; Tray Bakes</button></a>
+            <a href="index.html#tray-bakes"><button class="back-to-traybakes" role="button" aria-label="Go back to Tray Bakes">&larr; Tray Bakes</button></a>
             <h2>Chocolate Deluxe</h2>
             <p>This recipe is designed for a rectangular tray or tin measuring <span id="original-length">30</span>cm x <span id="original-width">20</span>cm.  
                 To customize the recipe for a different tray size, simply enter your dimensions in the fields below and scale the ingredients accordingly!
@@ -60,9 +80,9 @@
                     <h4>Enter your tray size below:</h4>
                     <input id="width-input" type="number" class="positive-number" placeholder="Width in cm"></input>
                     <input id="length-input" type="number" class="positive-number" placeholder="Length in cm"></input>
-                    <button id="scale-button">Scale</button>
-                    <p class="error-message">Number must be greater than zero.</p>
-                    <p class="error-message">Number must be greater than zero.</p>
+                    <button id="scale-button" aria-label="Scale recipe based on tray size">Scale</button>
+                    <p class="error-message" aria-live="polite">Number must be greater than zero.</p>
+                    <p class="error-message" aria-live="polite">Number must be greater than zero.</p>
                     <p id="no-area">Values must be entered into both boxes</p>
                 </div>
                 <div class="scalable-recipe">
