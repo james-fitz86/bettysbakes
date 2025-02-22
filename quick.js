@@ -25,29 +25,50 @@ function updateDisplay() {
 
 updateDisplay();
 
-previousArrow.addEventListener('click', function(){
+function navigatePrevious(){
     if (presentIndex > 0) {
         presentIndex--;
         updateDisplay();
     }
+};
+previousArrow.addEventListener('click', navigatePrevious);
+previousArrow.addEventListener("keydown", function(event){
+    if ( event.key === "Enter"){
+        navigatePrevious();
+    }
 });
 
-nextArrow.addEventListener('click', function(){
+function navigateNext(){
     if (presentIndex < quickRecipes.length - 1) {
         presentIndex++;
         updateDisplay();
+    }
+};
+
+nextArrow.addEventListener('click', navigateNext);
+nextArrow.addEventListener("keydown", function(event){
+    if ( event.key === "Enter"){
+        navigateNext();
     }
 });
 
 quickRecipes.forEach(recipe => {
     const listItems = recipe.querySelectorAll('ul li');
     listItems.forEach(item => {
-        item.addEventListener('click', () => {
+        function toggleMarked(){
             item.classList.toggle('marked');
+        }
+        item.addEventListener('click', toggleMarked);
+
+        item.addEventListener('keydown', event => {
+            if (event.key === "Enter"){
+                toggleMarked();
+            }
         });
+
+        item.setAttribute("tabindex", "0");
     });
 });
-
 
 listButtton.addEventListener('click', function(){
     quickRecipes.forEach(recipe => {
