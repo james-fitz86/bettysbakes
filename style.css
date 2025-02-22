@@ -582,6 +582,7 @@ to {opacity: 1}
     }
     main{
         width: 100%;
+        margin-top: 170px;
     }
     nav{
         top: 100px;
