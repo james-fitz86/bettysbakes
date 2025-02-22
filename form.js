@@ -30,6 +30,10 @@ form.addEventListener('submit', function(event) {
         resultDiv.innerHTML = '<p class="error">Password must contain at least one number</p>';
     }
     else{
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        document.getElementById('phone').value = '';
         resultDiv.innerHTML = '<p class="success">Form submitted successfully, you will receive a confirmation email shortly!</p>';
     }
 });
