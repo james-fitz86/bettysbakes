@@ -8,11 +8,19 @@ const rightArrow = document.querySelector(".right");
 let currentIndex = 0;
 
 thumbnails.forEach((thumb, index) =>{
-    thumb.addEventListener('click', function(){
+    function openGallery(selectedThumb, selectedIndex){
         gallery.style.display = 'flex';
-        galleryImage.src = this.getAttribute('alt');
-        currentIndex = index;
-    })
+        galleryImage.src = selectedThumb.getAttribute('data-full');
+        currentIndex = selectedIndex;
+    }
+    thumb.addEventListener('click', function(){
+        openGallery(thumb, index);
+    });
+    thumb.addEventListener('keydown', event =>{
+        if ( event.key === "Enter"){
+            openGallery(thumb, index);
+        }
+    });
 });
 
 
@@ -26,12 +34,12 @@ document.addEventListener('keydown', (event)=>{
     } else if(event.key === 'ArrowLeft'){
         if (currentIndex > 0) {
             currentIndex--;
-            galleryImage.src = thumbnails[currentIndex].getAttribute('alt');
+            galleryImage.src = thumbnails[currentIndex].getAttribute('data-full');
         }
     } else if(event.key === 'ArrowRight'){
         if (currentIndex < thumbnails.length - 1) {
             currentIndex++;
-            galleryImage.src = thumbnails[currentIndex].getAttribute('alt');
+            galleryImage.src = thumbnails[currentIndex].getAttribute('data-full');
         }
     }
 });
@@ -39,13 +47,13 @@ document.addEventListener('keydown', (event)=>{
 leftArrow.addEventListener('click', function(){
     if (currentIndex > 0) {
         currentIndex--;
-        galleryImage.src = thumbnails[currentIndex].getAttribute('alt');
+        galleryImage.src = thumbnails[currentIndex].getAttribute('data-full');
     }
 });
 
 rightArrow.addEventListener('click', function(){
     if (currentIndex < thumbnails.length - 1) {
         currentIndex++;
-        galleryImage.src = thumbnails[currentIndex].getAttribute('alt');
+        galleryImage.src = thumbnails[currentIndex].getAttribute('data-full');
     }
 });
